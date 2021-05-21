@@ -7,7 +7,13 @@ _
 provider/pom.xml,2\d\2d4b0002f4d67b39ea06ac3861afaaa7b3f83dc0
 @
 consumer/pom.xml,a\e\ae0fe1fce8f97995f0225aa73104a92a194ef0d5
-[
-+provider/src/main/java/org/yangxin/App.java,0\8\087e6f92713e53eff4d05fc2e4417fb982a5adc4
-[
-+consumer/src/main/java/org/yangxin/App.java,7\1\7114ec0df28de6432f6b3d84bff96191b3de48eb
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+c
+3consumer/src/main/java/org/yangxin/ConsumerApp.java,3\c\3c2b51829aff9abaa9d67dd9a71c2e35d0c6786e
+c
+3provider/src/main/java/org/yangxin/ProviderApp.java,b\a\ba2f28fb36c30ede4c1514bbaf32a2a2e274c261
+X
+(zuul/src/main/java/org/yangxin/Zuul.java,1\6\167a0cf7dd72082a2eecadb467029ec523cf1e53
+<
+zuul/pom.xml,7\e\7ebb086d60927faf6a52188ddb66e57a5ba5403a

@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: b6c4fcd0-f5ed-4164-9cef-a10e74bb780b
+  application:
+    name: spring-zuul
+server:
+  port: 8083
+
+ribbon:
+  eureka:
+    enabled: false
+zuul:
+  routes:
+    provider:
+      path: /api/**
+      serviceId: yinhai-provider
+

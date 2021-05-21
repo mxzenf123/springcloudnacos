@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
-        <module name="provider" />
-        <module name="springcloudnacos" />
+        <module name="springcloudnacos.provider" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="provider" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

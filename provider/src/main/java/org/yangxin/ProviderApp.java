@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class App 
+public class ProviderApp
 {
     public static void main( String[] args )
     {
 
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(ProviderApp.class, args);
     }
 
     @RestController

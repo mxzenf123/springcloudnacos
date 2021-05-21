@@ -18,29 +18,24 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class App 
+public class ConsumerApp
 {
     public static void main( String[] args )
     {
 
-        SpringApplication.run(App.class,args);
-    }
-
-    @Bean
-    public RestTemplate restTemplate(){
-
-        return new RestTemplate();
+        SpringApplication.run(ConsumerApp.class,args);
     }
 
     @RestController
     public class NacosController{
+
 
         @Autowired
         private LoadBalancerClient loadBalancerClient;
         @Autowired
         private RestTemplate restTemplate;
 
-        private String appName = "consumer";
+        private final String  appName = "consumer";
 
         @GetMapping("/echo/app-name")
         public String echoAppName(){
@@ -48,7 +43,13 @@ public class App
             String path = String.format("http://%s:%s/echo/%s",serviceInstance.getHost(),serviceInstance.getPort(),appName);
             System.out.println("request path:" +path);
             return restTemplate.getForObject(path,String.class);
+
         }
 
+    }
+    @Bean
+    public RestTemplate restTemplate(){
+
+        return new RestTemplate();
     }
 }
